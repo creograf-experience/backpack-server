@@ -1,0 +1,34 @@
+{
+  "name": "backpack-server",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "test:int": "jest int --runInBand",
+    "test:unit": "jest unit",
+    "postinstall": "node ./scripts/init-folders.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.6",
+    "read-xml": "^3.0.0",
+    "socket.io": "^2.3.0",
+    "uuid": "^7.0.3",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.4.0",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2"
+  }
+}
